@@ -3,8 +3,6 @@
 
     <persistence-unit name="awesomebankunit">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-        <properties>
 
-        </properties>
     </persistence-unit>
 </persistence>
