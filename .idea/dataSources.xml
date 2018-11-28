@@ -9,7 +9,17 @@
 
 C:/Users/cloud/Desktop/bankapi/src/main/java/META-INF/persistence.xml</remarks>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://35.205.231.94:5432/awesome_bank</jdbc-url>
+      <jdbc-url>jdbc:postgresql://35.242.179.212:5432/awesome_bank</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="awesomebankunit/Hibernate" uuid="d638c572-32bc-414c-911a-aa2175ecee4a">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>Hibernate
+
+C:/Users/cloud/Desktop/bankapi/src/main/resources/META-INF/persistence.xml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://35.242.179.212:5432/awesome_bank</jdbc-url>
     </data-source>
   </component>
 </project>
