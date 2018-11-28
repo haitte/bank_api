@@ -5,31 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f3cc6bb-6eb8-4179-ae88-bf554b970b9f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/d638c572-32bc-414c-911a-aa2175ecee4a.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/d638c572-32bc-414c-911a-aa2175ecee4a/storage_v2/_src_/database/awesome_bank.mCTCXg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/d638c572-32bc-414c-911a-aa2175ecee4a/storage_v2/_src_/database/awesome_bank.mCTCXg/schema/public.abK9xQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nb-configuration.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/junying/Daos/TranscationDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/junying/Filters/CORSResponseFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/junying/RestDemoJaxRsApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/bankapi.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/junying/Daos/TranscationDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/junying/Filters/CORSResponseFilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/junying/RestDemoJaxRsApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5ad55e0f-0ad1-4b61-89b9-3422103b6ed9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5ad55e0f-0ad1-4b61-89b9-3422103b6ed9.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5ad55e0f-0ad1-4b61-89b9-3422103b6ed9/storage_v2/_src_/database/awesome_bank.mCTCXg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5ad55e0f-0ad1-4b61-89b9-3422103b6ed9/storage_v2/_src_/database/awesome_bank.mCTCXg/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/junying/Entities/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/junying/Entities/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/junying/MyResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/junying/MyResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nb-configuration.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nb-configuration.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/junying/Customer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/junying/CustomerDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/junying/Entities/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/junying/Entities/Account.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/junying/MyResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/junying/MyResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/bankapi.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/junying/Account.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/junying/AccountDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/junying/Transaction.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -202,8 +184,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="432">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -293,10 +275,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="3832" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="4363" />
+    <option name="y" value="228" />
+    <option name="width" value="614" />
+    <option name="height" value="330" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -405,9 +387,9 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543277022926" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543418908907" />
     <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/mortgage-2-REST" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Java-ChessGame-with-AI-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -484,19 +466,20 @@
       <workItem from="1543164424673" duration="205000" />
       <workItem from="1543165664284" duration="173000" />
       <workItem from="1543178092518" duration="14031000" />
-      <workItem from="1543253571225" duration="11690000" />
+      <workItem from="1543253571225" duration="16685000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72833000" />
+    <option name="totallyTimeSpent" value="77828000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3832" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.63178295" visible="true" weight="0.1977612" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.63323784" visible="true" weight="0.1977612" />
       <window_info id="Structure" order="1" sideWeight="0.3667622" side_tool="true" weight="0.1977612" />
-      <window_info id="Persistence" order="2" sideWeight="0.36821705" side_tool="true" visible="true" weight="0.1977612" />
+      <window_info id="Persistence" order="2" sideWeight="0.3667622" side_tool="true" visible="true" weight="0.1977612" />
       <window_info id="Designer" order="3" />
       <window_info id="Image Layers" order="4" />
       <window_info id="UI Designer" order="5" />
@@ -505,13 +488,13 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" weight="0.23127754" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4989339" visible="true" weight="0.23127754" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39977974" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.43171805" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.43171805" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5010661" side_tool="true" weight="0.23127754" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.329718" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32929516" />
@@ -799,8 +782,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="432">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
