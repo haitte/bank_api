@@ -2,9 +2,11 @@ package com.junying.Entities;
 
 
 import javax.persistence.*;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.List;
 
 @Entity
+@XmlRootElement
 public class Customer {
 
     @Id
@@ -16,6 +18,16 @@ public class Customer {
     private String address;
     private String email;
 
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    private String password;
+
     @OneToMany
     @JoinColumn(name = "customer_id")
     private List<Account> accounts;
@@ -24,10 +36,12 @@ public class Customer {
     public Customer() {
     }
 
-    public Customer(String name, String address, String email, List<Account> accounts) {
+    public Customer(Long customerId, String name, String address, String email, List<Account> accounts,String password) {
+        this.customerId =customerId;
         this.name = name;
         this.address = address;
         this.email = email;
+        this.password = password;
         this.accounts = accounts;
     }
     public List<Account> getAccounts() {

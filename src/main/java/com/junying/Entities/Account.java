@@ -1,18 +1,21 @@
 package com.junying.Entities;
 
 import javax.persistence.*;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.List;
 
 @Entity
 @Table(name = "account",schema = "public")
 
+@XmlRootElement
 public class Account {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     @Column(name = "account_id")
     Long accountId;
 
-    private String sort_code;
+    @Column(name = "sort_code")
+    private String sortCode;
 
     private int balance;
 
@@ -27,8 +30,9 @@ public class Account {
     private List<Transaction> transactions;
 
 
-    public Account(String sort_code, int balance, Long customerId, String accountType, List<Transaction> transactions) {
-        this.sort_code = sort_code;
+    public Account(Long accountId,String sortCode, int balance, Long customerId, String accountType, List<Transaction> transactions) {
+        this.accountId = accountId;
+        this.sortCode = sortCode;
         this.balance = balance;
         this.customerId = customerId;
         this.accountType = accountType;
@@ -62,12 +66,12 @@ public class Account {
         this.accountId = accountId;
     }
 
-    public String getSort_code() {
-        return sort_code;
+    public String getSortCode() {
+        return sortCode;
     }
 
-    public void setSort_code(String sort_code) {
-        this.sort_code = sort_code;
+    public void setSortCode(String sortCode) {
+        this.sortCode = sortCode;
     }
 
     public int getBalance() {

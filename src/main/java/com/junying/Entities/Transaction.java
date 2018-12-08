@@ -1,30 +1,47 @@
 package com.junying.Entities;
 
+import org.hibernate.annotations.CreationTimestamp;
+
 import javax.persistence.*;
+import javax.xml.bind.annotation.XmlRootElement;
+import java.util.Date;
+
 
 @Entity
 @Table(name = "transaction")
+@XmlRootElement
 public class Transaction {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     @Column(name = "transaction_id")
     Long transactionId;
-    private String date;
+
+    @Temporal(TemporalType.TIMESTAMP)
+    @CreationTimestamp
+    private Date date;
+
     private String type;
     private int amount;
-    private int post_transaction;
+    @Column(name = "post_transaction")
+    private int postTransaction;
     private String description;
+
     @Column(name = "account_id")
-    private int accountId;
+    private Long accountId;
+
+//    @ManyToOne
+//    @JoinColumn(name = "account_id")
+//    private List<Account> accounts;
 
     public Transaction() {
     }
 
-    public Transaction(String date, String type, int amount, int post_transaction, String description, int accountId) {
+    public Transaction(Long transactionId, Date date, String type, int amount, int postTransaction, String description, Long accountId) {
+        this.transactionId = transactionId;
         this.date = date;
         this.type = type;
         this.amount = amount;
-        this.post_transaction = post_transaction;
+        this.postTransaction = postTransaction;
         this.description = description;
         this.accountId = accountId;
     }
@@ -37,11 +54,11 @@ public class Transaction {
         this.transactionId = transactionId;
     }
 
-    public String getDate() {
+    public Date getDate() {
         return date;
     }
 
-    public void setDate(String date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 
@@ -61,12 +78,12 @@ public class Transaction {
         this.amount = amount;
     }
 
-    public int getPost_transaction() {
-        return post_transaction;
+    public int getPostTransaction() {
+        return postTransaction;
     }
 
-    public void setPost_transaction(int post_transaction) {
-        this.post_transaction = post_transaction;
+    public void setPostTransaction(int post_transaction) {
+        this.postTransaction = post_transaction;
     }
 
     public String getDescription() {
@@ -77,11 +94,11 @@ public class Transaction {
         this.description = description;
     }
 
-    public int getAccountId() {
+    public Long getAccountId() {
         return accountId;
     }
 
-    public void setAccountId(int accountId) {
+    public void setAccountId(Long accountId) {
         this.accountId = accountId;
     }
 }
