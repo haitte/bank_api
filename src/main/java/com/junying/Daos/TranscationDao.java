@@ -7,7 +7,6 @@ import com.junying.Exceptions.NotFoundException;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
-import javax.persistence.TypedQuery;
 import java.util.List;
 
 public class TranscationDao implements Dao<Transaction> {
@@ -28,7 +27,7 @@ public class TranscationDao implements Dao<Transaction> {
 
     public Transaction movement(Transaction transaction) {
 
-        int postTransaction=0;
+        float postTransaction=0;
         if(transaction.getType().equals("credit")){
             postTransaction = entityManager.find(Account.class,transaction.getAccountId()).getBalance()+transaction.getAmount();
         }else if(transaction.getType().equals("debit")){
@@ -45,8 +44,8 @@ public class TranscationDao implements Dao<Transaction> {
     }
 
     public void transfer(Long id, int amount ,String description, Long anotherId) {
-        int postTransaction1=0;
-        int postTransaction2=0;
+        float postTransaction1=0;
+        float postTransaction2=0;
             postTransaction1 = entityManager.find(Account.class,id).getBalance()-amount;
             if (postTransaction1<0){
                 throw new BalanceTooLowException("Balance too low, you can not make this transfer.");

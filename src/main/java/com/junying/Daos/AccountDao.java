@@ -15,7 +15,7 @@ public class AccountDao implements Dao<Account> {
         this.entityManager = entityManager;
     }
 
-    public int getBalance(Long accountId){
+    public float getBalance(Long accountId){
         return entityManager.find(Account.class,accountId).getBalance();
     }
 

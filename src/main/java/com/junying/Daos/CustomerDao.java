@@ -21,21 +21,24 @@ public class CustomerDao implements Dao<Customer>{
     }
 
         //login
-    public Long login(Credentials credentials){
+    public Response login(Credentials credentials){
         TypedQuery<Customer> query = entityManager.createQuery("SELECT customer FROM Customer customer WHERE email=?1",Customer.class);
         query.setParameter(1,credentials.getEmail());
         Customer customer = query.getSingleResult();
         if(BCrypt.checkpw(credentials.getPassword(),customer.getPassword())){
             //200
-            return  customer.getCustomerId();
+            return  Response.status(200)
+                    .entity(customer.getCustomerId())
+                    .build();
         }else{
             //403
-            return null;
+            return  Response.status(403)
+                    .build();
         }
     }
 
     //register
-    public Long register(Customer customer){
+    public Response register(Customer customer){
         customer.setPassword( BCrypt.hashpw(customer.getPassword(), BCrypt.gensalt()));
 
             entityManager.getTransaction().begin();
@@ -43,7 +46,9 @@ public class CustomerDao implements Dao<Customer>{
             entityManager.getTransaction().commit();
             entityManager.close();
             //200
-            return  customer.getCustomerId();
+        return  Response.status(200)
+                .entity(customer.getCustomerId())
+                .build();
     }
 
 

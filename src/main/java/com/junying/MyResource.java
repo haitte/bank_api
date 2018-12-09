@@ -105,7 +105,7 @@ public class MyResource {
     @Path("/description/balance/{id}")
     @Produces({MediaType.APPLICATION_XML,MediaType.APPLICATION_JSON})
     public Response getBalance(@PathParam("id") Long id) {
-        int balance =this.aDao.getBalance(id);
+        float balance =this.aDao.getBalance(id);
         return Response.status(200).entity(balance).build();
     }
 
@@ -129,7 +129,7 @@ public class MyResource {
     @POST
     @Path("/login")
     @Produces({MediaType.APPLICATION_XML,MediaType.APPLICATION_JSON})
-    public Long login(Credentials credentials){
+    public Response login(Credentials credentials){
         return this.cDao.login(credentials);
     }
 
@@ -137,7 +137,7 @@ public class MyResource {
     @POST
     @Path("/register")
     @Produces({MediaType.APPLICATION_XML,MediaType.APPLICATION_JSON})
-    public Long register(Customer customer){
+    public Response register(Customer customer){
         return this.cDao.register(customer);
     }
 

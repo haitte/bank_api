@@ -21,9 +21,9 @@ public class Transaction {
     private Date date;
 
     private String type;
-    private int amount;
+    private float amount;
     @Column(name = "post_transaction")
-    private int postTransaction;
+    private float postTransaction;
     private String description;
 
     @Column(name = "account_id")
@@ -36,7 +36,7 @@ public class Transaction {
     public Transaction() {
     }
 
-    public Transaction(Long transactionId, Date date, String type, int amount, int postTransaction, String description, Long accountId) {
+    public Transaction(Long transactionId, Date date, String type, int amount, float postTransaction, String description, Long accountId) {
         this.transactionId = transactionId;
         this.date = date;
         this.type = type;
@@ -70,19 +70,19 @@ public class Transaction {
         this.type = type;
     }
 
-    public int getAmount() {
+    public float getAmount() {
         return amount;
     }
 
-    public void setAmount(int amount) {
+    public void setAmount(float amount) {
         this.amount = amount;
     }
 
-    public int getPostTransaction() {
+    public float getPostTransaction() {
         return postTransaction;
     }
 
-    public void setPostTransaction(int post_transaction) {
+    public void setPostTransaction(float post_transaction) {
         this.postTransaction = post_transaction;
     }
 

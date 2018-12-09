@@ -5,8 +5,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 import java.util.List;
 
 @Entity
-@Table(name = "account",schema = "public")
-
 @XmlRootElement
 public class Account {
     @Id
@@ -17,7 +15,7 @@ public class Account {
     @Column(name = "sort_code")
     private String sortCode;
 
-    private int balance;
+    private float balance;
 
     @Column(name = "account_type")
     private String accountType;
@@ -30,7 +28,7 @@ public class Account {
     private List<Transaction> transactions;
 
 
-    public Account(Long accountId,String sortCode, int balance, Long customerId, String accountType, List<Transaction> transactions) {
+    public Account(Long accountId, String sortCode, float balance, Long customerId, String accountType, List<Transaction> transactions) {
         this.accountId = accountId;
         this.sortCode = sortCode;
         this.balance = balance;
@@ -74,11 +72,11 @@ public class Account {
         this.sortCode = sortCode;
     }
 
-    public int getBalance() {
+    public float getBalance() {
         return balance;
     }
 
-    public void setBalance(int balance) {
+    public void setBalance(float balance) {
         this.balance = balance;
     }
 
